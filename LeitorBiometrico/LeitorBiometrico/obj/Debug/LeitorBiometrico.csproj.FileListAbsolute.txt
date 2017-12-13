@@ -1,0 +1,8 @@
+C:\projetos\Biometria\LeitorBiometrico\LeitorBiometrico\bin\LeitorBiometrico.dll.config
+C:\projetos\Biometria\LeitorBiometrico\LeitorBiometrico\bin\LeitorBiometrico.dll
+C:\projetos\Biometria\LeitorBiometrico\LeitorBiometrico\bin\LeitorBiometrico.pdb
+C:\projetos\Biometria\LeitorBiometrico\LeitorBiometrico\obj\Debug\LeitorBiometrico.csprojResolveAssemblyReference.cache
+C:\projetos\Biometria\LeitorBiometrico\LeitorBiometrico\obj\Debug\Interop.FlexCodeSDK.dll
+C:\projetos\Biometria\LeitorBiometrico\LeitorBiometrico\obj\Debug\LeitorBiometrico.csproj.ResolveComReference.cache
+C:\projetos\Biometria\LeitorBiometrico\LeitorBiometrico\obj\Debug\LeitorBiometrico.dll
+C:\projetos\Biometria\LeitorBiometrico\LeitorBiometrico\obj\Debug\LeitorBiometrico.pdb

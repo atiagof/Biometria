@@ -1,0 +1,6 @@
+C:\projetos\Biometria\SistemaBiometria\SistemaBiometria\bin\SistemaBiometria.dll.config
+C:\projetos\Biometria\SistemaBiometria\SistemaBiometria\bin\SistemaBiometria.dll
+C:\projetos\Biometria\SistemaBiometria\SistemaBiometria\bin\SistemaBiometria.pdb
+C:\projetos\Biometria\SistemaBiometria\SistemaBiometria\obj\Debug\SistemaBiometria.dll
+C:\projetos\Biometria\SistemaBiometria\SistemaBiometria\obj\Debug\SistemaBiometria.pdb
+C:\projetos\Biometria\SistemaBiometria\SistemaBiometria\obj\Debug\SistemaBiometria.csprojResolveAssemblyReference.cache

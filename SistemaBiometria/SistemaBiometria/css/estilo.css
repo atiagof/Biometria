@@ -1,0 +1,18 @@
+﻿@charset "utf-8";
+
+p{
+	margin: 2px;
+	padding: 2px;
+}	
+.class_font_rotulo {
+	font-weight:bold;
+	display:block;
+    font-size:12px;
+}
+.class_error {
+	font-size:12px;
+	color:#FF0000;
+	margin-left:5px;
+	font-weight:normal;
+	margin-bottom:10px;
+}

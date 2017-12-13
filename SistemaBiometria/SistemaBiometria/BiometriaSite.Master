@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BiometriaSite.master.cs" Inherits="SistemaBiometria.BiometriaSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sistemas Biometricos</title>
+    <link href="css/reset2.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/typography.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="js/funcoes.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js"></script>
+    <script type="text/jscript">
+        $(document).ready(function () {
+            var validator = $("#form1").validate({
+                rules: {
+                    txtLogin: "required",
+                    txtSenha: { required: true, minlength: 8 }
+                }
+                ,
+                messages: {
+                    txtLogin: "Informe o seu login",
+                    txtSenha: { required: "Informe a sua senha",
+                        minlength: "A senha deverá possuir no mínimo 8 digitos"
+                    }
+                },
+                wrapper: 'li',
+                errorLabelContainer: $("#form1 div.alertmsg")
+            });
+        });
+</script>
+
+    <!--[if lte IE 6]>
+<style type="text/css">
+.clearfix {height: 1%;}
+img {border: none;}
+#resol {position:absolute;} body {overflow-x: hidden;} 
+</style>
+<![endif]-->
+    <!--[if gte IE 7.0]>
+<style type="text/css">
+.clearfix {display: inline-block;}
+</style>
+<![endif]-->
+</head>
+<body>
+    <div id="mainwrap">
+        <%--<div id="footer_terms">
+  <h1><strong>css layouts</strong> no <a href="http://www.layouts-templates.com/"><strong>css layouts</strong></a></h1>
+ </div>--%>
+        <!--END OF TERMS OF USE-->
+        <div id="header-wrap" class="wrap">
+            <div id="header" class="pagesize">
+                <h1 id=""><a href="Home.aspx">BIOMETRIA</a></h1>
+                <%--<div id="topnav">
+            <a href="?" title="something here"><img src="images/icon1.gif" alt="" /></a>
+            <a href="?" title="something here"><img src="images/icon2.gif" alt="" /></a>
+            <a href="?" title="something here"><img src="images/icon3.gif" alt="" /></a>
+        </div>--%>
+            </div>
+        </div>
+        <div id="mainnav-wrap" class="wrap">
+            <div id="mainnav" class="pagesize clearfix">
+                <div class="vernav">
+                    <ul class="clearfix">
+                        <li>
+                            <%--<a href="Home.aspx" id="active" runat="server" clientidmode="Static" id="Lnk_Home"><span>Home</span></a>--%>
+                            <asp:HyperLink ID="Hpk_Home" runat="server"><span>Home</span></asp:HyperLink>
+                        </li>
+
+                        <li>
+                            <%--<a href="Sistema.aspx" runat="server" id="Lnk_Sistema"><span>Sistemas</span></a>--%>
+                            <asp:HyperLink ID="Hpk_Sistema" runat="server"><span>Sistemas</span></asp:HyperLink>
+                        </li>
+                        <li>
+                            <%--<a href="Permissao.aspx" runat="server" clientidmode="Static" id="Lnk_Permissao"><span>Permissão</span></a>--%>
+                            <asp:HyperLink ID="Hpk_Permissao" runat="server"><span>Permissão</span></asp:HyperLink>
+                        </li>
+                        <li>
+                            <%--<a href="#"><span>Portfolio</span></a>--%>
+                            <asp:HyperLink ID="Hpk_Sair" runat="server"><span>Sair</span></asp:HyperLink>
+                        </li>
+                        <%--<li><a href="#"><span>Contact / Help</span></a></li>--%>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="container-wrap" class="wrap">
+            <div id="container" class="pagesize clearfix">
+                <div id="maincol">
+                    <p>
+                        <asp:Label ID="Lbl_BemVindo" runat="server" Text="" Font-Size="Large" ForeColor="Blue"></asp:Label>
+                    </p>
+                    <form id="form1" runat="server">
+                        <asp:ContentPlaceHolder ID="Conteudo" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
